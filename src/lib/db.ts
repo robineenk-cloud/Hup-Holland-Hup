@@ -6,7 +6,7 @@ let db: Database.Database | null = null
 export function initDatabase() {
   if (db) return db
 
-  const dbPath = path.join(process.cwd(), 'hup_holland.db')
+  const dbPath = path.join(process.cwd(), 'hup-holland.db')
   db = new Database(dbPath)
   db.pragma('journal_mode = WAL')
 
